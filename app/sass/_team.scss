@@ -1,0 +1,76 @@
+.team {
+    padding-top: 50px;
+    &-box {
+        background: #F5F5FA;
+        border-radius: 12px;
+        &__img {
+            display: flex;
+            width: 100%;
+            &-pic {
+                height: 500px;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 12px 12px 0 0;
+            }
+        }
+        &__text {
+            padding: 30px;
+            height: 100%;
+            &-quote {
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 37px;
+                background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                padding-bottom: 30px;
+            }
+            &-who {
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 20px;
+                color: $grey;
+                padding-top: 5px;
+                padding-bottom: 8px;
+            }
+            &-position {
+                font-size: 14px;
+                line-height: 22px;
+                color: $grey;
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .team {
+        &-box {
+            display: flex;
+            justify-content: space-between;
+            &__img {
+                min-width: 400px;
+                &-pic {
+                height: 528px;
+                max-width: 400px;
+                border-radius: 12px 0 0 12px;
+            }
+            }
+            &__text {
+                width: auto;
+            }
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .team {
+        &-box {
+            &__img {
+                max-width: 400px;
+                &-pic {
+                    height: 400px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,99 @@
+.publications {
+    padding-top: 30px;
+    &-title {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding-top: 5px;
+        padding-bottom: 30px;
+    }
+    &-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 0 -15px;
+    }
+    &__card-wrap {
+        padding: 0 15px;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    &__card {
+        height: 100%;
+        border-radius: 0 0 8px 8px;
+        background: $white;
+        &-img {
+            background: #F5F5FA;
+            display: flex;
+            width: 100%;
+            &-pic {
+                height: 200px;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 12px 12px 0 0;
+            }
+        }
+        &-text {
+            padding: 30px;
+            &-link {
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 20px;
+                color: $blue;
+            }
+            &-link:hover {
+                color: $red;
+            }
+            &-date {
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 15px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                color: $grey;
+                padding-bottom: 15px;
+                padding-top: 15px;
+            }
+            &-text {
+                font-size: 14px;
+                line-height: 22px;
+                color: #000000;
+                padding-top: 15px;
+                border-top: 4px solid $light-gray;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .publications {
+        &-wrap {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        &__card-wrap--width-1 {
+            width: 50%;
+        }
+        &__card-wrap--width-2 {
+            width: 50%;
+        }
+        &__card-wrap--width-3 {
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .publications__card-wrap--width-1 {
+        width: 33.333%;
+    }
+    .publications__card-wrap--width-2 {
+        width: 33.333%;
+    }
+    .publications__card-wrap--width-3 {
+        width: 33.333%;
+    }
+}

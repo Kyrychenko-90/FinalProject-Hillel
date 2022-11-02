@@ -1,0 +1,96 @@
+.trust {
+    &-title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #323264;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    &__box {
+        display: flex;
+        flex-wrap: wrap;
+        &-logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 120px;
+            width: 100%;
+            &--1 {
+                background: #1C4280;
+            }
+            &--2 {
+                background: #143646;
+            }
+            &--3 {
+                background: linear-gradient(0deg, #F48B30, #F48B30), #F48B30;
+            }
+            &--4 {
+                background: #9E4DC3;
+            }
+            &--5 {
+                background: #FD9339;
+            }
+            &--6 {
+                background: #E2E2E4;
+            }
+            &--7 {
+                display: none;
+                background: #C71C36;
+            }
+            &--8 {
+                display: none;
+                background: #DCF3F9;
+            }
+            &--9 {
+                display: none;
+                background: #EAEAEA;
+            }
+            &--10 {
+                display: none;
+                background: #282240;
+            }
+            &--11 {
+                display: none;
+                background: #1D4568;
+            }
+            &--12 {
+                display: none;
+                background: #000000;
+            }
+        }
+
+    }
+}
+
+@media (min-width: 768px) {
+    .trust__box-logo {
+        width: 33.333%;
+        &--7 {
+            display: flex;
+        }
+        &--8 {
+            display: flex;
+        }
+        &--9 {
+            display: flex;
+        }
+        &--10 {
+            display: flex;
+        }
+        &--11 {
+            display: flex;
+        }
+        &--12 {
+            display: flex;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .trust__box-logo {
+        width: 25%;
+    }
+}

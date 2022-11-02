@@ -1,0 +1,71 @@
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/banner-mobile.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 114px;
+    width: auto;
+    &-title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        letter-spacing: 13px;
+        text-align: center;
+        text-transform: uppercase;
+        color: $white;
+        opacity: 0.8;
+        text-shadow: 0 15px 30px rgba(40, 40, 86, 0.8);
+    }
+}
+
+@media (min-resolution: 144dpi) and (min-resolution: 1.5dppx) {
+    .banner {
+        background-image: url("../img/banner-mobile@2x.jpg");
+    }
+}
+
+@media (min-width: 768px) {
+    .banner {
+        background-image: url("../img/banner-tablet.jpg");
+        height: 234px;
+        &-title {
+            font-size: 46px;
+            line-height: 56px;
+            letter-spacing: 63px;
+        }
+    }
+    @media (min-resolution: 144dpi) and (min-resolution: 1.5dppx) {
+        .banner {
+            background-image: url("../img/banner-tablet@2x.jpg");
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .banner {
+        background-image: url("../img/banner-desktop.jpg");
+        height: 311px;
+        &-title {
+            font-size: 86px;
+            line-height: 105px;
+        }
+    }
+    @media (min-resolution: 144dpi) and (min-resolution: 1.5dppx) {
+        .banner {
+            background-image: url("../img/banner-desktop@2x.jpg");
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .banner {
+        height: 438px;
+        &-title {
+            font-size: 96px;
+            line-height: 117px;
+        }
+    }
+}

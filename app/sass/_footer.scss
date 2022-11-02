@@ -1,0 +1,139 @@
+.footer {
+    text-align: center;
+    &-wrap {
+        border-top: 2px solid $light-gray;
+        padding-top: 30px;
+    }
+    &-top {
+        padding-bottom: 21px;
+        &__adress {
+            font-size: 16px;
+            line-height: 20px;
+            color: #323264;
+            padding-bottom: 10px;
+        }
+        &__map {
+            &-link {
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 15px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                color: $blue;
+            }
+            &-link:hover {
+                color: $red;
+            }
+        }
+    }
+    &-middle {
+        padding-bottom: 30px;
+        &__fb {
+            padding-bottom: 10px;
+            &-link {
+                cursor: pointer;
+            }
+            &-link:hover svg path {
+                fill: $red;
+            }
+        }
+        &__tel {
+            padding-bottom: 10px;
+            &-link {
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 20px;
+                text-align: right;
+                color: #46466E;
+            }
+        }
+        &__mail {
+
+            &-link {
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 20px;
+                color: $blue;
+            }
+            &-link:hover {
+                color: $red;
+            }
+        }
+    }
+    &-bottom {
+        padding-bottom: 30px;
+        &__text {
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+            color: $grey;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .footer {
+        &-wrap {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        &-top {
+            display: flex;
+            &__adress:after {
+                content: "";
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background: $grey;
+                display: inline-block;
+                vertical-align: middle;
+                margin-left: 10px;
+            }
+            &__map {
+                margin-left: 10px;
+            }
+        }
+        &-middle {
+            display: flex;
+            order: 10;
+            align-items: center;
+            width: 100%;
+            &__fb {
+                padding: 0;
+                margin-right: 10px;
+            }
+            &__tel {
+                padding: 0;
+                margin: 0;
+            }
+            &__tel:before {
+                content: "";
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background: $grey;
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 10px;
+            }
+            &__tel:after {
+                content: "";
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background: $grey;
+                display: inline-block;
+                vertical-align: middle;
+                margin-left: 10px;
+            }
+            &__mail {
+                margin-left: 10px;
+            }
+        }
+        &-bottom {
+            margin-left: auto;
+        }
+    }
+}
+
+
