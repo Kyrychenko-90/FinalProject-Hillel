@@ -30,3 +30,10 @@ $('.achievements-slider').slick({
     ]
 });
 
+$(function() {
+    $('.header-menu__mobile-btm').click(function(){
+        $(this).toggleClass('open');
+        $('.header-menu__list').toggleClass('open');
+        $('.body').toggleClass('lock');
+    });
+});

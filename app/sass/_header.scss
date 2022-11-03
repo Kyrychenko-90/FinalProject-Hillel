@@ -74,20 +74,71 @@
 
     &-menu {
         grid-area: 2 / 2 / 3 / 3;
-
+        display: inline-flex;
+        align-items: center;
+        justify-content: flex-end;
         &__mobile-btm {
+            align-items: center;
+            width: 24px;
+            height: 8px;
+            position: relative;
+            transition-duration: 1s;
             cursor: pointer;
-            &-link {
-
+            margin-top: 15px;
+            &-burger {
+                height: 2px;
+                width: 100%;
+                background-color: $white;
+                position: absolute;
+                border-radius: 20px;
+                transition-duration: .25s;
+            }
+            &-burger:before {
+                content: "";
+                left: 0;
+                position: absolute;
+                top: -8px;
+                height: 2px;
+                width: 100%;
+                background-color: $white;
+                border-radius: 20px;
+                transition-duration: .25s;
+            }
+            &-burger:after {
+                content: "";
+                left: 0;
+                position: absolute;
+                top: 8px;
+                height: 2px;
+                width: 100%;
+                background-color: $white;
+                border-radius: 20px;
+                transition-duration: .25s;
             }
         }
+        &__mobile-btm.open .header-menu__mobile-btm-burger {
+            background: transparent;
+        }
+        &__mobile-btm.open .header-menu__mobile-btm-burger:before {
+            transition: transform .25s;
+            transform: rotate(45deg);
+            top: 0;
+        }
+        &__mobile-btm.open .header-menu__mobile-btm-burger:after {
+            transition: transform .25s;
+            transform: rotate(-405deg);
+            top: 0;
+        }
         &__list {
-            display: none;
+            display: flex;
             flex-direction: column;
-            position: absolute;
-            left: 0;
-            top: auto;
-            width: 375px;
+            position: fixed;
+            left: -100%;
+            top: 104px;
+            width: 100%;
+            height: calc(100vh - 104px);
+            transition-duration: .75s;
+            overflow: auto;
             background-color: #323264;
             list-style: none;
             padding: 12px 12px 0;
@@ -111,6 +162,10 @@
             &-link.active {
                 color: $red;
             }
+        }
+        &__list.open {
+            left: 0;
+            transition-duration: .75s;
         }
     }
 }
@@ -193,6 +248,7 @@
         }
         &-menu {
             grid-area: 3 / 1 / 4 / 2;
+            display: flex;
             &__mobile-btm {
                 display: none;
             }
@@ -201,7 +257,10 @@
                 flex-direction: row;
                 justify-content: flex-start;
                 position: relative;
-                width: auto;
+                left: 0;
+                top: 0;
+                height: calc(100%);
+                overflow: hidden;
                 padding: 0;
                 background-color: transparent;
                 &-link {
