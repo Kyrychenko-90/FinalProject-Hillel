@@ -33,9 +33,15 @@
             font-weight: 700;
             font-size: 22px;
             line-height: 27px;
-            color: $blue;
             padding-top: 30px;
             padding-bottom: 15px;
+            &-link {
+                display: inline-flex;
+                color: $blue;
+            }
+            &-link:hover {
+                color: $red;
+            }
         }
         &-text {
             font-size: 16px;

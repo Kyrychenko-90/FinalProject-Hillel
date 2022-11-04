@@ -26,7 +26,7 @@
         border-radius: 0 0 8px 8px;
         background: $white;
         &-img {
-            background: #F5F5FA;
+            background: $dark-white;
             display: flex;
             width: 100%;
             &-pic {
@@ -60,7 +60,7 @@
             &-text {
                 font-size: 14px;
                 line-height: 22px;
-                color: #000000;
+                color: $black;
                 padding-top: 15px;
                 border-top: 4px solid $light-gray;
             }

@@ -258,6 +258,11 @@ a {
   background-color: rgba(245, 245, 250, 0.2);
 }
 
+.header-top--white-page {
+  background-color: #F5F5FA;
+  opacity: 1;
+}
+
 .header-top__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -285,12 +290,22 @@ a {
   border-radius: 8px;
 }
 
+.header-top__list-link--white-page {
+  color: #B3B3BA;
+}
+
 .header-top__list-link:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
+.header-top__list-link--white-page:hover {
+  background-color: #F5F5FA;
+  opacity: 1;
+}
+
 .header-top__list-link.active {
   background-color: #F0145A;
+  color: #FFFFFF;
 }
 
 .header-top__adress {
@@ -305,9 +320,17 @@ a {
   padding-right: 15px;
 }
 
+.header-top__tel--white-page {
+  color: #B3B3BA;
+}
+
 .header-top__fb {
   display: none;
   cursor: pointer;
+}
+
+.header-top__fb--white-page svg path {
+  fill: #B3B3BA;
 }
 
 .header-top__fb:hover svg path {
@@ -325,7 +348,22 @@ a {
 }
 
 .header-logo__breadcrumb {
-  display: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 20px;
+  line-height: 24px;
+  color: #323264;
+}
+
+.header-logo__breadcrumb:before {
+  content: "";
+  background-image: url("../img/slash-mobile.svg");
+  background-repeat: no-repeat;
+  width: 12px;
+  height: 26px;
+  margin-left: 4px;
+  margin-right: 4px;
 }
 
 .header-menu {
@@ -364,6 +402,14 @@ a {
           transition-duration: .25s;
 }
 
+.header-menu__mobile-btm-burger--white-page {
+  background-color: #000000;
+}
+
+.header-menu__mobile-btm-burger--white-page:after {
+  background-color: #000000;
+}
+
 .header-menu__mobile-btm-burger:before {
   content: "";
   left: 0;
@@ -388,6 +434,14 @@ a {
   border-radius: 20px;
   -webkit-transition-duration: .25s;
           transition-duration: .25s;
+}
+
+.header-menu__mobile-btm-burger--white-page:before {
+  background-color: #000000;
+}
+
+.header-menu__mobile-btm-burger--white-page:after {
+  background-color: #000000;
 }
 
 .header-menu__mobile-btm.open .header-menu__mobile-btm-burger {
@@ -494,6 +548,9 @@ a {
     color: #FFFFFF;
     margin-right: 6px;
   }
+  .header-top__adress--white-page {
+    color: #B3B3BA;
+  }
   .header-top__adress:before {
     content: "";
     width: 6px;
@@ -542,6 +599,16 @@ a {
     width: 130px;
     height: 60px;
   }
+  .header-logo__breadcrumb {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .header-logo__breadcrumb:before {
+    content: "";
+    background-image: url("../img/slash-tablet.svg");
+    width: 21px;
+    height: 47px;
+  }
   .header-menu {
     grid-area: 3 / 1 / 4 / 2;
     display: -webkit-box;
@@ -574,6 +641,7 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 100%;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
@@ -581,16 +649,29 @@ a {
     color: #FFFFFF;
     background: none;
     border-radius: 0;
-    padding: 0 15px 0 0;
+    padding: 0;
+    margin: 0 15px 0 0;
+  }
+  .header-menu__list-link--white-page {
+    color: #24A3FF;
   }
   .header-menu__list-link:hover {
-    color: #F0145A;
+    color: #FFFFFF;
+    border-bottom: 2px solid;
+    width: auto;
   }
-  .header-menu__list-link:active {
-    background: transparent;
+  .header-menu__list-link--white-page:hover {
+    color: #24A3FF;
+    border-bottom: 2px solid;
+    width: auto;
   }
   .header-menu__list-link.active {
     color: #FFFFFF;
+    border-bottom: 2px solid;
+    width: auto;
+  }
+  .header-menu__list-link--white-page.active {
+    color: #F0145A;
   }
 }
 
@@ -618,6 +699,9 @@ a {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+  }
+  .header-menu__list-link {
+    margin: 0 0 0 15px;
   }
 }
 
@@ -836,9 +920,19 @@ a {
   font-weight: 700;
   font-size: 22px;
   line-height: 27px;
-  color: #24A3FF;
   padding-top: 30px;
   padding-bottom: 15px;
+}
+
+.services__card-title-link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: #24A3FF;
+}
+
+.services__card-title-link:hover {
+  color: #F0145A;
 }
 
 .services__card-text {
