@@ -63,11 +63,10 @@
     }
 }
 
-
 @media (min-width: 1024px) {
-        .services {
-            &__card-wrap {
-                width: 33.333%;
-            }
+    .services {
+        &__card-wrap {
+            width: 33.333%;
         }
+    }
 }

@@ -1764,9 +1764,6 @@ a {
   .achievements__card-wrap {
     width: 25%;
   }
-  .achievements__card-wrap--tablet {
-    display: block;
-  }
 }
 
 @media (min-width: 1024px) {
