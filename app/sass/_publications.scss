@@ -70,6 +70,12 @@
 
 @media (min-width: 768px) {
     .publications {
+        &-title {
+            font-size: 38px;
+            line-height: 46px;
+            padding-top: 9px;
+            padding-bottom: 29px;
+        }
         &-wrap {
             flex-direction: row;
             justify-content: space-between;

@@ -1,5 +1,5 @@
 .services {
-    padding-top: 10px;
+    padding-top: 8px;
     padding-bottom: 60px;
     &-title {
         font-weight: 700;
@@ -53,12 +53,19 @@
 
 @media (min-width: 768px) {
     .services {
+        &-title {
+            font-size: 38px;
+            line-height: 46px;
+        }
         &-wrap {
             flex-direction: row;
             justify-content: space-between;
         }
         &__card-wrap {
             width: 50%;
+        }
+        &__card {
+            margin-top: 60px;
         }
     }
 }

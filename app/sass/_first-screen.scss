@@ -1,12 +1,11 @@
 .first-screen {
-    padding-bottom: 10px;
     &__title {
         font-weight: 700;
         font-size: 38px;
         line-height: 46px;
         text-align: center;
         color: $white;
-        padding: 139px 60px 159px 60px;
+        padding: 133px 60px 159px 60px;
     }
     &__scroll {
         display: flex;
@@ -24,11 +23,10 @@
 @media (min-width: 768px) {
     .first-screen {
         &__title {
-            padding-top: 274px;
-            padding-bottom: 417px;
+            padding: 198px 0 417px 0;
         }
         &__scroll {
-            padding-bottom: 105px;
+            padding-bottom: 88px;
         }
     }
 }
@@ -36,11 +34,11 @@
 @media (min-width: 1024px) {
     .first-screen {
         &__title {
-            padding-top: 245px;
-            padding-bottom: 307px;
+            padding-top: 182px;
+            padding-bottom: 288px;
         }
         &__scroll {
-            padding-bottom: 90px;
+            padding-bottom: 38px;
         }
     }
 }
@@ -48,8 +46,8 @@
 @media (min-width: 1440px) {
     .first-screen {
         &__title {
-            padding-top: 261px;
-            padding-bottom: 323px;
+            padding-top: 198px;
+            padding-bottom: 304px;
         }
     }
 }

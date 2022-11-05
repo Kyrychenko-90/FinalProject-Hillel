@@ -31,12 +31,26 @@
                 line-height: 20px;
                 color: $grey;
                 padding-top: 5px;
-                padding-bottom: 8px;
+                padding-bottom: 4px;
             }
             &-position {
                 font-size: 14px;
                 line-height: 22px;
                 color: $grey;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .team {
+        padding-top: 80px;
+        &-box {
+            &__text {
+                &-quote {
+                    font-size: 38px;
+                    line-height: 46px;
+                }
             }
         }
     }
@@ -68,7 +82,7 @@
             &__img {
                 max-width: 400px;
                 &-pic {
-                    height: 400px;
+                    height: 344px;
                 }
             }
         }

@@ -10,7 +10,7 @@
             font-size: 16px;
             line-height: 20px;
             color: $violet;
-            padding-bottom: 10px;
+            padding-bottom: 6px;
         }
         &__map {
             &-link {
@@ -29,7 +29,7 @@
     &-middle {
         padding-bottom: 30px;
         &__fb {
-            padding-bottom: 10px;
+            padding-bottom: 4px;
             &-link {
                 cursor: pointer;
             }
@@ -78,6 +78,7 @@
         }
         &-top {
             display: flex;
+            padding-bottom: 13px;
             &__adress:after {
                 content: "";
                 width: 6px;
@@ -89,7 +90,7 @@
                 margin-left: 10px;
             }
             &__map {
-                margin-left: 10px;
+                margin-left: 6px;
             }
         }
         &-middle {
@@ -113,7 +114,7 @@
                 background: $grey;
                 display: inline-block;
                 vertical-align: middle;
-                margin-right: 10px;
+                margin-right: 6px;
             }
             &__tel:after {
                 content: "";
@@ -123,13 +124,14 @@
                 background: $grey;
                 display: inline-block;
                 vertical-align: middle;
-                margin-left: 10px;
+                margin-left: 6px;
             }
             &__mail {
                 margin-left: 10px;
             }
         }
         &-bottom {
+            padding-bottom: 13px;
             margin-left: auto;
         }
     }
