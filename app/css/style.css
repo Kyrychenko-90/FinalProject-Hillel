@@ -316,6 +316,10 @@ a {
   color: #B3B3BA;
 }
 
+.header-top__tel:hover {
+  color: #F0145A;
+}
+
 .header-top__fb {
   display: none;
   cursor: pointer;
@@ -1654,6 +1658,7 @@ a {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-color: #82819f;
   height: 114px;
   width: auto;
 }
